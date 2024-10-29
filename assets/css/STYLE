@@ -1,0 +1,35 @@
+.leftside {
+    background: #000599;
+}
+.rightside {
+    background: #006999;
+}
+.leftside,
+.rightside {
+    color: rgba(255, 255, 255, 0.4);
+    padding: 2%;
+    text-align: left;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 600px) {
+    body {
+        background: linear-gradient(90deg, #000599 50%, #006999 50%);
+    }
+    .flexbox {
+        width: 100%;
+        margin: 0 auto;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .leftside,
+    .rightside {
+        -webkit-flex: 1;
+        flex: 1;
+        background: none;
+    }
+}
